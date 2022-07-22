@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const CardDiv = styled.div`
 display: inline-block;
-width: 360px;
+width: 500px;
 height: auto;
 margin: 20px;
 padding: 20px;
@@ -29,15 +29,13 @@ font-family: monospace;
 font-size: 1.8rem;
 `
 
-export default function CharacterCard(props) {
+export default function EpisodeCard(props) {
   return (
   <CardDiv>
     <WhiteDiv>
-      <img src={props.char.image} />
-      <StyledH2>{props.char.name}</StyledH2>
-      <StyledP>Status: {props.char.status}</StyledP>
-      <StyledP>Species: {props.char.species}</StyledP>
-      <StyledP>Gender: {props.char.gender}</StyledP>
+      <StyledH2>{props.episode.name}</StyledH2>
+      <StyledP>Air Date: {props.episode.air_date}</StyledP>
+      <StyledP>Episode: {props.episode.episode}</StyledP>
     </WhiteDiv>
   </CardDiv>
   )}
